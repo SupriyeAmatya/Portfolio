@@ -3,7 +3,8 @@
 Static site: plain HTML, CSS and JS. No build step.
 
 - `data.js`: **edit this one.** Projects (grid cells) and notes (post-its), with how they're wired together.
-- `index.html`: header links, plus the Experience and Education lists.
+- `index.html`: home page with the project grid.
+- `experience.html` / `education.html`: separate pages. The header (name, page links, contact) is repeated at the top of all three HTML files, so change it in each.
 - `styles.css` / `script.js`: layout and interaction.
 
 ## Adding a project

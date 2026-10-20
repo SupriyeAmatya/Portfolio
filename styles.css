@@ -57,7 +57,13 @@ h1, h2, h3, p { margin: 0; }
 }
 h1 { font-size: 22px; font-weight: 600; letter-spacing: -.01em; }
 .lede { color: var(--muted); margin-top: 2px; }
-.links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 15px; }
+.home { text-decoration: none; }
+.top-right { display: grid; justify-items: end; gap: 10px; }
+.pages { display: flex; gap: 20px; font-size: 15px; font-weight: 500; }
+.pages a { text-decoration: none; color: var(--muted); }
+.pages a:hover { color: var(--ink); }
+.pages a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: var(--muted); }
 .email { user-select: all; }
 .links a[aria-disabled="true"] { color: var(--muted); text-decoration-style: dotted; }
 
@@ -160,15 +166,19 @@ h2 { font: 500 12px/1 var(--mono); text-transform: uppercase; letter-spacing: .0
 .pop-foot button { all: unset; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 .pop-foot button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 
-/* CV */
-.cv { margin-top: 72px; display: grid; gap: 12px; max-width: 760px; }
-.cv h2 + .rows { margin-bottom: 28px; }
+/* Experience / Education pages */
+.cv { display: grid; gap: 56px; }
+.cv > section { max-width: 760px; }
+.cv h2 { margin-bottom: 14px; }
 .rows { margin: 0; }
 .rows > div { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); }
 .rows dt { font: 13px/1.6 var(--mono); color: var(--muted); }
 .rows dd { margin: 0; }
 .rows dd b { font-weight: 600; }
 .rows dd span { display: block; color: var(--muted); font-size: 14px; }
+.rows ul { margin: 8px 0 0; padding-left: 18px; }
+.rows li { margin-top: 4px; }
+.rows li::marker { color: var(--muted); }
 
 .foot { padding-top: 48px; padding-bottom: 56px; font-size: 14px; color: var(--muted); }
 
@@ -179,6 +189,7 @@ h2 { font: 500 12px/1 var(--mono); text-transform: uppercase; letter-spacing: .0
 @media (max-width: 760px) {
   .wrap { padding: 0 16px; }
   .top { flex-direction: column; align-items: flex-start; padding-top: 32px; padding-bottom: 28px; gap: 12px; }
+  .top-right { justify-items: start; }
   .section-head { flex-direction: column; gap: 6px; }
   .board { grid-template-columns: minmax(0, 1fr); }
   .grid { grid-row: 1; gap: 12px; }
