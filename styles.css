@@ -57,7 +57,8 @@ h1, h2, h3, p { margin: 0; }
 }
 h1 { font-size: 22px; font-weight: 600; letter-spacing: -.01em; }
 .lede { color: var(--muted); margin-top: 2px; }
-.links { display: flex; gap: 20px; font-size: 15px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 15px; }
+.email { user-select: all; }
 .links a[aria-disabled="true"] { color: var(--muted); text-decoration-style: dotted; }
 
 /* Section heads */
