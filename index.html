@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supriye Amatya</title>
+  <meta name="description" content="Supriye Amatya: backend .NET developer and Master of Applied Computer Science student at StFX.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top wrap">
+    <div>
+      <h1>Supriye Amatya</h1>
+      <p class="lede">Backend .NET developer. MACS student at StFX, Antigonish NS.</p>
+    </div>
+    <nav class="links" aria-label="Contact">
+      <a href="mailto:supriyematya@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/supriye-amatya-48868a213/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" aria-disabled="true" title="Add your GitHub link">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="work-h">
+      <div class="section-head">
+        <h2 id="work-h">Work</h2>
+        <p class="hint">Click a project to open it. Drag the notes around. <button type="button" class="text-btn" id="tidy">Reset notes</button></p>
+      </div>
+
+      <div class="board" id="board">
+        <div class="lane" id="lane" aria-hidden="true"></div>
+        <ol class="grid" id="grid"></ol>
+        <svg class="wires" id="wires" aria-hidden="true"></svg>
+        <div class="notes" id="notes" aria-label="Background notes"></div>
+      </div>
+    </section>
+
+    <section class="cv" aria-labelledby="cv-h">
+      <h2 id="cv-h">Experience</h2>
+      <dl class="rows">
+        <div><dt>2022–25</dt><dd><b>Backend .NET Developer</b>, MicroBanker Nepal<span>Internet banking and an office management system: clean architecture, token-based auth, MySQL.</span></dd></div>
+        <div><dt>2021–22</dt><dd><b>.NET Intern</b>, EasySoftware<span>Amusement park and library systems, MySQL data modelling.</span></dd></div>
+        <div><dt>2026</dt><dd><b>Peer Support</b>, Bloomfield Hub, StFX</dd></div>
+      </dl>
+      <h2>Education</h2>
+      <dl class="rows">
+        <div><dt>2025–27</dt><dd><b>Master of Applied Computer Science</b>, St. Francis Xavier University</dd></div>
+        <div><dt>2019–22</dt><dd><b>BSc (Hons) Computing</b>, London Metropolitan University · Islington College</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <a href="mailto:supriyematya@gmail.com">supriyematya@gmail.com</a>
+  </footer>
+
+  <div class="scrim" id="scrim" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
