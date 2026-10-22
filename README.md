@@ -1,25 +1,17 @@
-# Portfolio
+# Supriye Amatya — Portfolio
 
-Static site: plain HTML, CSS and JS. No build step.
+My personal portfolio website, live at **[supriyeamatya.com.np](https://supriyeamatya.com.np)**.
 
-- `data.js`: **edit this one.** Projects (grid cells) and notes (post-its), with how they're wired together.
-- `index.html`: home page with the project grid.
-- `experience.html` / `education.html`: separate pages. The header (name, page links, contact) is repeated at the top of all three HTML files, so change it in each.
-- `styles.css` / `script.js`: layout and interaction.
+I'm a backend .NET developer and a Master of Applied Computer Science student at St. Francis Xavier University in Antigonish, Nova Scotia. This site collects my projects, work experience and education in one place.
 
-## Adding a project
-Add an entry to `projects` in `data.js`. Put images in an `img/` folder and set `image: "img/name.png"`.
-To wire it to a note, add the project's `id` to that note's `projects` list.
+## What's on the site
+- **Work:** a grid of my projects. Click one to open it. The sticky notes beside it trace my path from school to work and can be dragged around the board.
+- **Experience:** my roles as a backend developer and my campus involvement at StFX.
+- **Education:** my degrees.
 
-## Settings (top of `script.js`)
-- `DROP_AFTER_MS`: how long an opened project stays up before falling (8000).
-- `PAUSE_ON_HOVER`: hold the timer while the visitor hovers or tabs into the card.
+## Built with
+Plain HTML, CSS and JavaScript, with no frameworks or build step. Hosted on GitHub Pages.
 
-## Run locally
-```
-python -m http.server 5500
-```
-Then open http://localhost:5500. Opening `index.html` directly also works.
-
-## Deploy
-Any static host works (GitHub Pages, Netlify, Vercel). Upload the folder as is.
+## Contact
+- Email: supriyematya@gmail.com
+- LinkedIn: [supriye-amatya](https://www.linkedin.com/in/supriye-amatya-48868a213/)
